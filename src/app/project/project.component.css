@@ -1,0 +1,56 @@
+.project-header{
+    height: 100vh;
+    width: 100vw;
+    padding: 5%;
+}
+
+.projects img{
+    height:300px;
+    width: 500px;
+    border-radius: 5%;
+}
+.projects{
+    display: flex;
+    margin-left: 5%;
+    height: 300px;
+    width: 300px;
+}
+.pro-details{
+    margin: 25px;
+}
+.pro-details p{
+    border: 1px solid blue;
+
+}
+a ,p{
+    text-decoration: none;
+}
+
+
+
+@media(min-width:0px) and (max-width:600px){
+    .project-header{
+        padding: 10%;
+    }
+    .projects{
+        display: block;
+        margin: 0px;
+    }
+    .projects img{
+        height:30%;
+        width: 80%;
+        border-radius: 5%;
+    }
+    .pro-details{
+        margin: 0px;
+    }
+    p{
+        height: fit-content;
+        width: 80vw;
+        border-radius: 5%;
+    }
+    .emp-management{
+        padding: 0px;
+    }
+}
+

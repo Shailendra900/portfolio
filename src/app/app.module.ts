@@ -9,6 +9,9 @@ import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 
@@ -25,6 +28,8 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     BrowserAnimationsModule,
 
+    MatProgressBarModule,
+    MatIconModule
    
   ],
   providers: [],

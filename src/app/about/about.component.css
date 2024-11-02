@@ -1,0 +1,51 @@
+.all-about{
+    display: flex;
+    padding: 5%;
+}
+.about-details{
+    display: flex;
+}
+.about-details img{
+    height: 250px;
+    width: 350px;
+    border-radius: 40%;
+}
+.job-details{
+    margin: 10%;
+}
+.about-second{
+    margin-left: 40px;
+}
+.pro-details{
+    margin-top: 5%;
+}
+.summary h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+strong ,b{
+    color: rgb(52, 52, 192);
+}
+@media(min-width:0px) and (max-width:600px){
+    .all-about{
+        display: block;
+        
+    }  
+    .about-details{
+        display: block;
+    }
+    .about-details img{
+        height: fit-content;
+        width: fit-content;
+    }
+    .pro-details{
+        margin-top: 5%;
+    } 
+    .summary{
+
+       margin: 0px;
+       padding: 5px;
+    }
+    .about-second{
+        margin:5px 0px;
+    }
+}
