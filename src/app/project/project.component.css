@@ -1,56 +1,99 @@
-.project-header{
-    height: 100vh;
-    width: 100vw;
-    padding: 5%;
-}
-
-.projects img{
-    height:300px;
-    width: 500px;
-    border-radius: 5%;
-}
-.projects{
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .project-header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-header h1 {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 10px;
+  }
+  
+  .project-header p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .projects {
     display: flex;
-    margin-left: 5%;
-    height: 300px;
-    width: 300px;
-}
-.pro-details{
-    margin: 25px;
-}
-.pro-details p{
-    border: 1px solid blue;
-
-}
-a ,p{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Project card styling */
+  .pro-details {
+    flex: 1 1 100%;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .pro-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pro-details img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #007acc;
+  }
+  
+  .pro-details h3 {
+    padding: 10px 20px;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .pro-details p {
+    padding: 10px 20px;
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  /* Link styling */
+  .pro-details a {
     text-decoration: none;
-}
-
-
-
-@media(min-width:0px) and (max-width:600px){
-    .project-header{
-        padding: 10%;
+    color: inherit;
+  }
+  
+  /* Responsive styling */
+  @media (min-width: 768px) {
+    .projects {
+      flex-direction: row;
     }
-    .projects{
-        display: block;
-        margin: 0px;
+  
+    .pro-details {
+      flex: 1 1 45%;
+      max-width: 45%;
     }
-    .projects img{
-        height:30%;
-        width: 80%;
-        border-radius: 5%;
+  }
+  
+  @media (min-width: 1024px) {
+    .pro-details h3 {
+      font-size: 1.8rem;
     }
-    .pro-details{
-        margin: 0px;
+  
+    .pro-details p {
+      font-size: 1rem;
     }
-    p{
-        height: fit-content;
-        width: 80vw;
-        border-radius: 5%;
-    }
-    .emp-management{
-        padding: 0px;
-    }
-}
-
+  }
+  

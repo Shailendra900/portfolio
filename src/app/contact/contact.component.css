@@ -1,83 +1,131 @@
-
-.contact{
-    height: 100vh;
-    width: 100vw;
-    padding: 5%;
-}
-.connect-sym{
-    display: flex;
-    justify-content: space-evenly;
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
     text-align: center;
-    align-content: center;
-    margin-top: 5%    
-}
-.connect-sym mat-icon {
-    font-size: 50px; 
-    width: 100px;
-    height: 70px;
-    border-radius: 15%;
-    background-color: rgb(70, 61, 61);
-}
-
-/* find me */
-.msg{
-    height: 100px;
-    width: 100%;
-    align-items: center;
-    margin-top: 10%;
-    margin-left: 30%;
-}
-.text{
-    position: absolute;
-    left: 25%;
-    bottom: 9%;
-}
-.find-me i{
-    font-size: 50px; /* Adjust the size as needed */
-    margin: 0 1%;
-}
-
-
-.find-me i:hover {
-    color: #1DA1F2; /* Change to any color you'd like */
-    animation: bounce 0.5s ease forwards;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
+  }
+  
+  .contact-info h1 {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .connect-link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Icon container styling */
+  .connect-sym {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .connect-sym div {
+    flex: 1 1 45%;
+    max-width: 45%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .connect-sym div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .connect-sym h6 {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .connect-sym p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Icon animation */
+  .connect-sym mat-icon {
+    font-size: 3rem;
+    color: #007acc;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: translateY(-20px);
+  }
+  
+  .connect-sym div:hover mat-icon {
+    transform: translateY(0);
+    color: #ff5722;
+  }
+  
+  /* Social icons styling */
+  .msg {
+    margin-top: 20px;
+  }
+  
+  .msg .text {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+    display: block;
+  }
+  
+  .find-me i {
+    font-size: 2rem;
+    color: #666;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .find-me i:hover {
+    color: #007acc;
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Styling */
+  @media (min-width: 768px) {
+    .connect-sym {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-    50% {
-        transform: translateY(-10px);
+  
+    .connect-sym div {
+      flex: 1 1 45%;
     }
-}
-@media (min-width:0px) and (max-width:600px){
-    .contact{
-        height: 100vh;
-        width: 100vw;
-        padding: 0px;
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-info h1 {
+      font-size: 2.5rem;
     }
-    .connect-sym{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: baseline;
+  
+    .contact-info p {
+      font-size: 1.1rem;
     }
-    .connect-sym mat-icon{
-        width: fit-content;
-        height: fit-content;
-    }
-    .text{
-        position: relative;
-        bottom: 15%;
-    }
-    .msg{
-        margin-left: 30px;
-    }
-
-    
-    .find-me i:hover {
-        color: #1DA1F2; /* Change to any color you'd like */
-        animation: bounce 0.5s ease forwards;
-    }
-}
+  }
+  
