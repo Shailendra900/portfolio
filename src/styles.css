@@ -2,3 +2,120 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes slideFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-from-top {
+    animation: slideFromTop 1s ease-out forwards;
+  }
+  @keyframes slideFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-from-bottom {
+    animation: slideFromBottom 1s ease-out forwards;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);  /* Start off-screen to the right */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);  /* End in its original position */
+      opacity: 1;  /* Fully visible */
+    }
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 1s ease-out forwards; /* Trigger the slide-in animation */
+  }
+  
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);  /* Start off-screen to the left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);  /* End in its original position */
+    opacity: 1;  /* Fully visible */
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards; /* Trigger the slide-in animation */
+}
+  
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-out forwards; /* Trigger the zoom-in animation */
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1.5s step-start infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s ease-in-out forwards;
+}
+
